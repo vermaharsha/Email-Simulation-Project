@@ -10,16 +10,16 @@ async function sendFakeMail() {
   });
 
   let mailOptions = {
-    from: '"Technanosoft Technologies" <talent@technanosoft.com>', // Spoofed From
-    to: "abhikumars2007@gmail.com", // Send to yourself
-    subject: "Congratulations! Selected for L1 Round – Internship Opportunity at Technanosoft Technologies",
+    from: '"ABC Technologies" <talent@abc.com>', // Spoofed From
+    to: "abc@gmail.com", // Send to yourself
+    subject: "Congratulations! Selected for L1 Round – Internship Opportunity at ABC Technologies",
     html: `
       <!-- Top Right Date & Time -->
       <div style="text-align:right; font-size:12px; color:#555;">
         30 Aug 2025, 20:05
       </div>
 
-      <p><strong>Technanosoft Technologies</strong> &lt;talent@technanosoft.com&gt;</p>
+      <p><strong>ABC Technologies</strong> &lt;talent@abc.com&gt;</p>
       <br>
       <p>Dear Candidate,</p>
       <p>
@@ -33,7 +33,7 @@ async function sendFakeMail() {
         Date: September 1, 2025<br>
         Day: Monday<br>
         Time: 11:45 am – 04:00 pm<br>
-        Location: 809, Tower - B, ITHUM TOWER, Block A, Industrial Area, Sector 62, Noida, Uttar Pradesh 201301
+        Location: ABC, Tower - A, Industrial Area, Sector 62, Noida, Uttar Pradesh 201301
       </p>
 
       <p><strong>Important Instructions:</strong><br>
@@ -46,3 +46,4 @@ async function sendFakeMail() {
 }
 
 sendFakeMail().catch(console.error);
+
